@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JAKAT CALCULATOR</title>
+</head>
+<body>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript">
+	
+function firstSet(){
+
+var x = document.getElementById('gold1').value;
+var y = document.getElementById('gold2').value;
+var z = document.getElementById('res1').value;
+var result = (Number(x)*Number(y))*0.025;
+$('#res1').val(result);
+resultSet();
+grandTotal();
+}
+
+function secondSet(){
+
+var x = document.getElementById('gold3').value;
+var y = document.getElementById('gold4').value;
+var z = document.getElementById('res2').value;
+var result = (Number(x)*Number(y))*0.025;
+$('#res2').val(result);
+resultSet();
+grandTotal();
+}
+
+function thirdSet(){
+
+var x = document.getElementById('gold5').value;
+var y = document.getElementById('gold6').value;
+var z = document.getElementById('res3').value;
+var result = (Number(x)*Number(y))*0.025;
+$('#res3').val(result);
+resultSet();
+grandTotal();
+}
+
+function fourthSet(){
+
+var x = document.getElementById('gold7').value;
+var z = document.getElementById('res4').value;
+var result = Number(x)*0.025;
+$('#res4').val(result);
+resultSet();
+grandTotal();
+}
+
+function resultSet(){
+
+var x = document.getElementById('res1').value;
+var y = document.getElementById('res2').value;
+var z = document.getElementById('res3').value;
+var a = document.getElementById('res4').value;
+var result = Number(x)+Number(y)+Number(z)+Number(a);
+$('#result1').val(result);
+grandTotal();
+}
+
+function fifthSet(){
+
+var x = document.getElementById('pstones').value;
+var result = Number(x)*0.025;
+$('#result2').val(result);
+fifthSet();
+grandTotal();
+}
+
+function setSilver(){
+
+var x = document.getElementById('silver').value;
+var y = document.getElementById('silver1').value;
+
+var result = (Number(x)*Number(y))*0.025;
+$('#result3').val(result);
+setSilver();
+grandTotal();
+}
+
+function handCash(){
+
+var x = document.getElementById('cash1').value;
+var y = document.getElementById('cash2').value;
+var z = document.getElementById('cash3').value;
+var a = document.getElementById('cash4').value;
+var r1 = Number(x)*0.025;
+$('#r1').val(r1);
+var r2 = Number(y)*0.025;
+$('#r2').val(r2);
+var r3 = Number(z)*0.025;
+$('#r3').val(r3);
+var r4 = Number(a)*0.025;
+$('#r4').val(r4);
+fourthResult();
+}
+
+function fourthResult(){
+
+var x = document.getElementById('r1').value;
+var y = document.getElementById('r2').value;
+var z = document.getElementById('r3').value;
+var a = document.getElementById('r4').value;
+
+var result=Number(x)+Number(y)+Number(z)+Number(a);
+$('#result4').val(result);
+grandTotal();
+}
+
+function loan(){
+
+var a = document.getElementById('loan1').value;
+var b = document.getElementById('loan2').value;
+var c = document.getElementById('loan3').value;
+var d = document.getElementById('loan4').value;
+var e = document.getElementById('loan5').value;
+var f = document.getElementById('loan6').value;
+var g = document.getElementById('loan7').value;
+var h = document.getElementById('loan8').value;
+
+var re1 = Number(a)*0.025;
+$('#re1').val(re1);
+var re2 = Number(b)*0.025;
+$('#re2').val(re2);
+var re3 = Number(c)*0.025;
+$('#re3').val(re3);
+var re4 = Number(d)*0.025;
+$('#re4').val(re4);
+var re5 = Number(e)*0.025;
+$('#re5').val(re5);
+var re6 = Number(f)*0.025;
+$('#re6').val(re6);
+var re7 = Number(g)*0.025;
+$('#re7').val(re7);
+var re8 = Number(h)*0.025;
+$('#re8').val(re8);
+
+fifthResult();
+}
+
+function fifthResult(){
+
+
+var a = document.getElementById('re1').value;
+var b = document.getElementById('re2').value;
+var c = document.getElementById('re3').value;
+var d = document.getElementById('re4').value;
+var e = document.getElementById('re5').value;
+var f = document.getElementById('re6').value;
+var g = document.getElementById('re7').value;
+var h = document.getElementById('re8').value;
+
+var result=Number(a)+Number(b)+Number(c)+Number(d)+Number(e)+Number(f)+Number(g)+Number(h);
+$('#result5').val(result);
+grandTotal();
+
+}
+
+function land(){
+var a = document.getElementById('land1').value;
+var b = document.getElementById('land2').value;
+var la1 = Number(a)*0.025;
+$('#la1').val(la1);
+var la2 = Number(b)*0.025;
+$('#la2').val(la2);
+sixthResult();
+}
+
+function sixthResult(){
+
+var a = document.getElementById('la1').value;
+var b = document.getElementById('la2').value;
+var result=Number(a)+Number(b);
+$('#result6').val(result);
+grandTotal();
+
+}
+
+function bus(){
+
+var a = document.getElementById('bus1').value;
+var b = document.getElementById('bus2').value;
+var c = document.getElementById('bus3').value;
+var d = document.getElementById('bus4').value;
+var e = document.getElementById('bus5').value;
+
+
+var b1 = Number(a)*0.025;
+$('#b1').val(b1);
+var b2 = Number(b)*0.025;
+$('#b2').val(b2);
+var b3 = Number(c)*0.025;
+$('#b3').val(b3);
+var b4 = Number(d)*0.025;
+$('#b4').val(b4);
+var b5 = Number(e)*0.025;
+$('#b5').val(b5);
+
+
+seventhResult();
+
+}
+
+function seventhResult(){
+
+var a = document.getElementById('b1').value;
+var b = document.getElementById('b2').value;
+var c = document.getElementById('b3').value;
+var d = document.getElementById('b4').value;
+var e = document.getElementById('b5').value;
+
+
+var resu=Number(a)+Number(b)+Number(c);
+var res = Number(d)+Number(e);
+var result = Number(resu)-Number(res);
+$('#result7').val(result);
+grandTotal();
+
+}
+
+function share(){
+
+var a = document.getElementById('share1').value;
+var b = document.getElementById('share2').value;
+var c = document.getElementById('share3').value;
+var d = document.getElementById('share4').value;
+
+
+var s1 = Number(a)*0.025;
+$('#s1').val(s1);
+var s2 = Number(b)*0.025;
+$('#s2').val(s2);
+var s3 = Number(c)*0.025;
+$('#s3').val(s3);
+var s4 = Number(d)*0.025;
+$('#s4').val(s4);
+
+
+eighthResult();
+
+}
+
+function eighthResult(){
+
+var a = document.getElementById('s1').value;
+var b = document.getElementById('s2').value;
+var c = document.getElementById('s3').value;
+var d = document.getElementById('s4').value;
+
+
+var resu=Number(a)+Number(b)+Number(d);
+var res = Number(c);
+var result = Number(resu)-Number(res);
+$('#result8').val(result);
+grandTotal();
+
+}
+
+function agri(){
+	var a = document.getElementById('agri1').value;
+var b = document.getElementById('agri2').value;
+var c = document.getElementById('agri3').value;
+
+var a1 = Number(a)*0.1;
+$('#a1').val(a1);
+var a2 = Number(b)*0.05;
+$('#a2').val(a2);
+var a3 = Number(c)*0.075;
+$('#a3').val(a3);
+
+ninthResult();
+
+}
+
+function ninthResult(){
+
+var a = document.getElementById('a1').value;
+var b = document.getElementById('a2').value;
+var c = document.getElementById('a3').value;
+
+
+var result=Number(a)+Number(b)+Number(c);
+
+$('#result9').val(result);
+grandTotal();
+
+
+}
+
+function anim(){
+
+var a = document.getElementById('anim1').value;
+
+
+var an1 = Number(a)*0.025;
+$('#an1').val(an1);
+
+tenthResult();
+
+}
+function tenthResult(){
+
+var a = document.getElementById('an1').value;
+var result = Number(a);
+$('#result10').val(result);
+grandTotal();
+
+}
+
+function lia(){
+
+
+var a = document.getElementById('lia1').value;
+var b = document.getElementById('lia2').value;
+
+
+var li1 = Number(a)*0.025;
+$('#li1').val(li1);
+var li2 = Number(b)*0.025;
+$('#li2').val(li2);
+
+eleventhResult();
+
+}
+function eleventhResult(){
+
+
+var a = document.getElementById('li1').value;
+
+var b = document.getElementById('li2').value;
+var result = Number(a) +Number(b);
+$('#result11').val(result);
+grandTotal();
+
+
+}
+
+
+function grandTotal(){
+
+
+
+var a = document.getElementById('result1').value;
+var b = document.getElementById('result2').value;
+var c = document.getElementById('result3').value;
+var d = document.getElementById('result4').value;
+var e = document.getElementById('result5').value;
+var f = document.getElementById('result6').value;
+var g = document.getElementById('result7').value;
+var h = document.getElementById('result8').value;
+var i = document.getElementById('result9').value;
+var j = document.getElementById('result10').value;
+var k = document.getElementById('result11').value;
+
+var re=Number(a)+Number(b)+Number(c)+Number(d)+Number(e)+Number(f)+Number(g)+Number(h)+Number(i)+Number(j);
+var res = Number(k);
+var result=Number(re)-Number(res);
+$('#result').val(result);
+
+}
+
+
+</script>
+    <center>
+
+<fieldset>
+	<legend>ZAKAT ON GOLD(2.5%)</legend>
+     24 carat Gold/Jewelry   <input id="gold1" onchange="firstSet()" placeholder="weight in grams" type="text" name="t1" value="">       
+       <input id="gold2" placeholder="price/gram" onchange="firstSet()" type="text" name="t2" value="">
+       <input id="res1" type="text" name="t3" value="">
+       <br/>
+     <br/>
+     22 carat Gold/Jewelry   <input id="gold3" onchange="secondSet()" placeholder="weight in grams" type="text" name="t1" value="">       
+      <input id="gold4"  placeholder="price/gram" onchange="secondSet()" type="text" name="t2" value="">      
+      <input id="res2" type="text" name="t3" value="">
+       <br/>
+     <br/>
+     18 carat Gold/Jewelry   <input id="gold5" onchange="thirdSet()" placeholder="weight in grams" type="text" name="t1" value="">      
+       <input id="gold6"  placeholder="price/gram" onchange="thirdSet()" type="text" name="t2" value="">       
+       <input id="res3" type="text" name="t3" value="">
+       <br/>
+       <br/>
+       Other estimated gold valuables.(please insert the current estimated value)   <input id="gold7"  placeholder="Estimated value" onchange="fourthSet()" type="text" name="t3" value=""> <input id="res4" onchange="fourthSet()" type="text" name="t3" value="">
+       <br/>
+       <br/>
+      Zakat payable:<input id="result1"  placeholder="Zakat payable" onchange="resultSet()" type="text" name="t3" value="">
+       <br/>
+     <br/>
+    </form>
+</fieldset>
+
+<br/>
+
+<fieldset>
+	<legend>ZAKAT ON PRECIOUS STONES(2.5%)</legend>
+     
+         Calculate the nett Market Value of the Precious stones like Diamonds, Rubies, Etc. and add them to the Estimated Value  <input id="pstones" onchange="fifthSet()"  placeholder="Estimated value"  type="text" name="t3" value=""> 
+       <br/>
+       <br/>
+      Zakat payable:<input id="result2"  placeholder="Zakat payable" onchange="secondResult()" type="text" name="t3" value="">
+       <br/>
+     <br/>
+    </form>
+</fieldset>
+
+<br/>
+
+<fieldset>
+	<legend>ZAKAT ON SILVER(2.5%)</legend>
+     
+         Include Household Silver Utensils, Artefacts, and Jewelery.  For Utensils, usually the silver is 90% pure so take 90% of the total weight  <input id="silver"  placeholder="Weight in grams" onchange="setSilver()" type="text" name="t3" value=""><input id="silver1"  placeholder="price/gram"  onchange="setSilver()" type="text" name="t3" value=""> 
+       <br/>
+       <br/>
+      Zakat payable:<input id="result3"  placeholder="Zakat payable" type="text" name="t3" value="">
+       <br/>
+     <br/>
+    </form>
+</fieldset>
+
+<br/>
+
+<fieldset>
+	<legend>ZAKAT ON CASH IN HAND/BANK(2.5%)</legend>
+     
+      Cash in hand   <input id="cash1"  placeholder="Actual value" onchange="handCash()" type="text" name="t1" value="">   
+       <input id="r1" type="text" name="t3" value="">
+       <br/>
+     <br/>
+    Cash in bank in Savings Accounts  <input id="cash2" placeholder="Actual value" onchange="handCash()" type="text" name="t1" value="">    
+      <input id="r2" type="text" name="t3" value="">
+       <br/>
+     <br/>
+    Cash in bank in current Accounts   <input id="cash3" placeholder="Actual value" onchange="handCash()" type="text" name="t1" value="">
+      <input id="r3" type="text" name="t3" value="">    
+       <br/>
+       <br/>
+       Cash held in fixed Deposits   <input id="cash4" placeholder="Actual value" onchange="handCash()" type="text" name="t1" value="">      
+       <input id="r4" type="text" name="t3" value="">     
+       <br/>
+       <br/>
+      Zakat payable:<input id="result4" onchange="fourthResult()" placeholder="Zakat payable" type="text" name="t3" value="">
+       <br/>
+     <br/>
+    </form>
+</fieldset>
+
+<br/>
+
+<fieldset>
+	<legend>ZAKAT ON LOANS / INVESTMENTS / FUNDS / SHARES , ETC (2.5%)</legend>
+     
+      Loans Receivable from Friends and Relatives <input id="loan1" placeholder="Actual value" onchange="loan()" type="text" name="t1" value="">
+       <input id="re1" type="text" name="t3" value="">
+       <br/>
+     <br/>
+    Investment in Govt Bonds <input id="loan2" onchange="loan()" placeholder="Actual value" type="text" name="t1" value="">
+       <input id="re2" type="text" name="t3" value="">
+       <br/>
+       <br/>
+    Provident Fund Contribution to date <input id="loan3" onchange="loan()" placeholder="Actual value" type="text" name="t1" value="">
+       <input id="re3" type="text" name="t3" value="">
+       <br/>
+       <br/>
+    Insurance Premiums including bonus up to date <input id="loan4" onchange="loan()" placeholder="Actual value" type="text" name="t1" value="">
+       <input id="re4" type="text" name="t3" value="">
+       <br/>
+       <br/>
+    Value of Shares (stocks) including Dividends. Take their market value on the date of calculation <input id="loan5" placeholder="Actual value" onchange="loan()" type="text" name="t1" value="">
+       <input id="re5" type="text" name="t3" value="">
+       <br/>
+       <br/>
+    Government Security Deposits, ADRs, etc <input id="loan6" placeholder="Actual value" onchange="loan()" type="text" name="t1" value="">
+       <input id="re6" type="text" name="t3" value="">
+       <br/>
+       <br/>
+    Investment in Private Chits, Funds, etc <input id="loan7" placeholder="Actual value" onchange="loan()" type="text" name="t1" value="">
+       <input id="re7" type="text" name="t3" value="">
+       <br/>
+       <br/>
+    Other Sources of Wealth<input id="loan8" onchange="loan()" placeholder="Actual value" type="text" name="t1" value="">       
+       <input id="re8" type="text" name="t3" value="">
+       <br/>
+       <br/>
+      Zakat payable:<input id="result5" onchange="fifthResult()" placeholder="Zakat payable" type="text" name="t3" value="">
+       <br/>
+     <br/>
+    </form>
+</fieldset>
+
+<br/>
+
+<fieldset>
+	<legend>ZAKAT ON LANDED PROPERTY  (2.5%)</legend>
+     
+      Landed Property held as an Investment / Business (Estimate the current Maket Value) <input id="land1" onchange="land()" placeholder="Estimate value" type="text" name="t1" value="">
+       <input id="la1" type="text" name="t3" value="">
+       <br/>
+     <br/>
+    Zakat on Rentals Coming from Property (After Deducting for all expenses)<input id="land2" onchange="land()" placeholder="Estimate value" type="text" name="t1" value="">       
+       <input id="la2" type="text" name="t3" value="">
+       <br/>
+       <br/>
+      Zakat payable:<input id="result6" onchange="sixthResult()" placeholder="Zakat payable" type="text" name="t3" value="">
+       <br/>
+     <br/>
+    </form>
+</fieldset>
+
+<br/>
+
+<fieldset>
+	<legend>ZAKAT ON BUSINESS (2.5%) ----- (STOCK-IN-TRADE)</legend>
+     
+      Value of Saleable Stock <input id="bus1" onchange="bus()" type="text" name="t1" value="">
+       <input id="b1" type="text" name="t3" value="">
+       <br/>
+     <br/>
+    Value of Damaged / Dead Stock <input id="bus2"  onchange="bus()" type="text" name="t1" value="">       
+       <input id="b2" type="text" name="t3" value="">
+       <br/>
+       <br/>
+     Amount Receivable from Credit Sales <input id="bus3"  onchange="bus()" type="text" name="t1" value="">
+       <input id="b3" type="text" name="t3" value="">
+       <br/>
+     <br/>
+     LESS: Amount Payable to Suppliers (Credit taken from suppliers for stocking goods) <input id="bus4"  onchange="bus()" type="text" name="t1" value="">
+       <input id="b4" type="text" name="t3" value="">
+       <br/>
+     <br/>
+    LESS: Bad Debts <input id="bus5"  onchange="bus()" type="text" name="t1" value="">
+       <input id="b5" type="text" name="t3" value="">
+       <br/>
+     <br/>
+      total value of stock:<input id="result7" placeholder="Zakat payable" onchange="seventhResult()" type="text" name="t3" value="">
+       <br/>
+     <br/>
+    </form>
+</fieldset>
+
+<br/>
+
+<fieldset>
+	<legend>ZAKAT ON SHARE IN PARTNERSHIP FIRMS(2.5%)</legend>
+     
+      Capital Balance as per Last balance Sheet <input id="share1" onchange="share()" type="text" name="t1" value="">
+       <input id="s1" type="text" name="t3" value="">
+       <br/>
+     <br/>
+    Loans Advanced by you to the Firm as of Date <input id="share2" onchange="share()"  type="text" name="t1" value="">       
+       <input id="s2" type="text" name="t3" value="">
+       <br/>
+       <br/>
+     LESS:  Withdrawals made by you during the current Year <input id="share3"  onchange="share()" type="text" name="t1" value="">
+       <input id="s3" type="text" name="t3" value="">
+       <br/>
+     <br/>
+     Accumulated Profit from the date of Balance Sheet to this Date (Estimate the Profit Value as it is difficult to get exact figures in the middle of Accounting Year) <input id="share4"  onchange="share()" type="text" name="t1" value="">
+       <input id="s4" type="text" name="t3" value="">
+       <br/>
+     <br/>
+     NETT TOTAL WORTH CALCULATED<input id="result8" placeholder="Zakat payable" onchange="eighthResult()" type="text" name="t3" value="">
+       <br/>
+     <br/>
+    </form>
+</fieldset>
+
+<br/>
+
+<fieldset>
+	<legend>ZAKAT ON AGRICULTURAL PRODUCE (10%, 7.5%, 5%)</legend>
+     
+      Produce Dependent on Rain Water - @ 10% of product (crop) in Value or Kind <input id="agri1" onchange="agri()" placeholder="Value of produce" type="text" name="t1" value="">
+       <input id="a1" type="text" name="t3" value="">
+       <br/>
+     <br/>
+    Produce totally dependent on Artificial Irrigation like Canal, Tank, Borewell, etc. @ 5% of Produce (crop) in Value or in Kind <input id="agri2" onchange="agri()" placeholder="Value of produce" type="text" name="t1" value="">       
+       <input id="a2" type="text" name="t3" value="">
+       <br/>
+       <br/>
+     Produce dependent Partially on Rain Water and Partially on Artificial Irrigation @ 7.5% of the produce Value or in Kind <input id="agri3" onchange="agri()" type="text" placeholder="Value of produce" name="t1" value="">
+       <input id="a3" type="text" name="t3" value="">
+       <br/>
+     <br/>
+     NETT TOTAL WORTH CALCULATED<input id="result9" placeholder="Zakat payable" onchange="ninthResult()" type="text" name="t3" value="">
+       <br/>
+     <br/>
+    </form>
+</fieldset>
+
+<br/>
+
+<fieldset>
+	<legend>ZAKAT ON ANIMALS & POULTRY & FISH FARMING(2.5%)</legend>
+     
+      Animals/ Birds more than 6 months Old -  @ 1 Animal or Bird PER 40 either in Kind or Value thereof. <input id="anim1" placeholder="Total value" onchange="anim()" type="text" name="t1" value="">
+       <input id="an1" type="text" name="t3" value="">
+       <br/>
+     <br/>
+    
+     NETT TOTAL WORTH CALCULATED<input id="result10" placeholder="Zakat payable" onchange="tenthResult()" type="text" name="t3" value="">
+       <br/>
+     <br/>
+    </form>
+</fieldset>
+
+<br/>
+
+<fieldset>
+	<legend>GENERAL LIABILITIES - You need to deduct your direct Payables or Liabilities which have not been deducted earlier - Usage of the loan should have been on  Zakatable Wealth only. HOME & CAR Loans are not to be deducted</legend>
+     
+      Personal Loans/ Debts which are to be paid back <input id="lia1" onchange="lia()" type="text" name="t1" value="">
+       <input id="li1" type="text" name="t3" value="">
+       <br/>
+     <br/>
+    Income Tax / Wealth Tax Payable (which is due and already counted towards your wealth) <input id="lia2" onchange="lia()" type="text" name="t1" value="">       
+       <input id="li2" type="text" name="t3" value="">
+       <br/>
+       <br/>
+      total liabilities:<input id="result11" onchange="eleventhResult()" type="text" name="t3" value="">
+       <br/>
+     <br/>
+    </form>
+</fieldset>
+
+<br/>
+
+<fieldset>
+	
+TOTAL ZAKAT PAYABLE:<input id="result" placeholder="TOTAL ZAKAT PAYABLE" type="text" name="t3" value="">
+</fieldset>
+
+    </center>
+
+	
+
+
+</body>
+</html>

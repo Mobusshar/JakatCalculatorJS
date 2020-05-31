@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>SUM Input Form Value</title>
+   
+</head>
+<body>
+    <center>
+    <form>
+        <fieldset>
+            <legend>JAKAT CACULATOR</legend>
+            <div class="form-group">
+                <label>Notebook</label>
+                <input type="number" class="form-control prc"/>
+            </div>
+            <br/>
+            <br/>
+            <div class="sum-group">
+                <label>Total</label>
+                <output id="result10"></output>
+            </div>
+            <br/>
+        
+            <div class="form-group">
+                <label>Desktop PC</label>
+                <input type="number" class="form-control prc"/>
+            </div>
+            <br/>
+            <div class="form-group">
+                <label>SmartPhone</label>
+                <input type="number" class="form-control prc"/>
+            </div>
+            <br/>
+            <div class="form-group">
+                <label>Tablets</label>
+                <input type="number" class="form-control prc"/>
+            </div>
+            <br/>
+            <div class="form-group">
+                <label>Servers</label>
+                <input type="number" class="form-control prc"/>
+            </div>
+            <br/>
+            <div class="sum-group">
+                <label>Total</label>
+                <output id="result1"></output>
+            </div>
+            <br/>
+        
+        </fieldset>
+    </form>
+    <form>
+    	<fieldset>
+    	            <div class="form1-group">
+                <label>Tablets</label>
+                <input type="number" class="form-control prc"/>
+            </div>
+            <br/>
+            <div class="form1-group">
+                <label>Servers</label>
+                <input type="number" class="form-control prc"/>
+            </div>
+            <br/>
+            <div class="sum-group">
+                <label>Total</label>
+                <output id="result2"></output>
+            </div>
+            <br/>
+        </fieldset>
+
+    </form>
+
+    <form>
+    	<fieldset>
+    	            <div class="form3-group">
+                <label>Tablets</label>
+                <input type="number" class="form-control prc"/>
+            </div>
+            
+            <br/>
+            <div class="sum1-group">
+                <label>Total</label>
+                <input id="result4" class="form-control prc"></input>
+            </div>
+            <br/>
+            <div class="form4-group">
+                <label>Servers</label>
+                <input type="number" class="form-control prc"/>
+            </div>
+            <br/>
+            <div class="sum1-group">
+                <label>Total</label>
+                <input id="result5" class="form-control prc"></input>
+            </div>
+            <br/>
+            <div class="sum1-group">
+                <label>Total</label>
+                <output type="number" id="result6" class="form-control prc"/>
+            </div>
+            <br/>
+            
+            
+        </fieldset>
+
+    </form>
+    </center>
+    
+    <script src="jquery.min.js"></script>
+    <script>
+        $('.form-group').on('input','.prc',function(){
+            var totalSum = 0;
+            $('.form-group .prc').each(function(){
+                var inputVal = $(this).val();
+                if($.isNumeric(inputVal)){
+                    totalSum += parseFloat(inputVal);
+                }
+            });
+            var total = totalSum/100;
+            var formtotal=total*2.5;
+            $('#result1').val(formtotal);
+        });
+        $('.form1-group').on('input','.prc',function(){
+            var totalSum = 0;
+            $('.form1-group .prc').each(function(){
+                var inputVal = $(this).val();
+                if($.isNumeric(inputVal)){
+                    totalSum += parseFloat(inputVal);
+                }
+            });
+            var total = totalSum/100;
+            var formtotal=total*2.5;
+            $('#result2').val(formtotal);
+        });
+
+         $('.form3-group').on('input','.prc',function(){
+            var totalSum = 0;
+            $('.form3-group .prc').each(function(){
+                var inputVal = $(this).val();
+                if($.isNumeric(inputVal)){
+                    totalSum += parseFloat(inputVal);
+                }
+            });
+            
+            $('#result4').val(totalSum);
+        });
+        
+        $('.form4-group').on('input','.prc',function(){
+            var totalSum = 0;
+            $('.form4-group .prc').each(function(){
+                var inputVal = $(this).val();
+                if($.isNumeric(inputVal)){
+                    totalSum += parseFloat(inputVal);
+                }
+            });
+            
+            $('#result5').val(totalSum);
+        });
+
+         $('.sum1-group').on('input','.prc',function(){
+            var totalSum = 0;
+            $('.sum1-group .prc').each(function(){
+                var inputVal = $(this).val();
+                if($.isNumeric(inputVal)){
+                    totalSum += parseFloat(inputVal);
+                }
+            });
+            
+            $('#result6').val(totalSum);
+        });
+        
+    </script>
+</body>
+</html>

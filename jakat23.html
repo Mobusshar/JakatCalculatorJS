@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JAKAT CALCULATOR</title>
+</head>
+<body>
+
+<script src="jquery.min.js"></script>
+    <script>
+        $('.form-group').on('input','.prc',function(){
+            var totalSum = 0;
+            $('.form-group .prc').each(function(){
+                var inputVal = $(this).val();
+                if($.isNumeric(inputVal)){
+                    totalSum += parseFloat(inputVal);
+                }
+            });
+            var total = totalSum/100;
+            var formtotal=total*2.5;
+            $('#result1').val(formtotal);
+        });
+        
+        
+    </script>
+
+    <center>
+
+<fieldset>
+	<legend>ZAKAT ON GOLD(2.5%)</legend>
+     24 carat Gold/Jewelry   <input id="gold1" type="text" name="t1" value="">       
+       <input id="gold2" type="text" name="t2" value="">
+       <input id="res1" type="text" name="t3" value="">
+       <br/>
+     <br/>
+     22 carat Gold/Jewelry   <input id="gold3" type="text" name="t1" value="">       
+      <input id="gold4" type="text" name="t2" value="">      
+      <input id="res2" type="text" name="t3" value="">
+       <br/>
+     <br/>
+     18 carat Gold/Jewelry   <input id="gold5" type="text" name="t1" value="">      
+       <input id="gold6" type="text" name="t2" value="">       
+       <input id="res3" type="text" name="t3" value="">
+       <br/>
+       <br/>
+       Other estimated gold valuables.(please insert the current estimated value)   <input id="gold7" type="text" name="t3" value=""> <input id="res4" type="text" name="t3" value="">
+       <br/>
+       <br/>
+      total result:<input id="result1" type="text" name="t3" value="">
+       <br/>
+     <br/>
+    </form>
+</fieldset>
+
+<br/>
+
+<fieldset>
+	<legend>ZAKAT ON PRESIOUS STONES(2.5%)</legend>
+     
+         Calculate the nett Market Value of the Precious stones like Diamonds, Rubies, Etc. and add them to the Estimated Value  <input id="pstones" type="text" name="t3" value=""> <input id="res5" type="text" name="t3" value="">
+       <br/>
+       <br/>
+      total result:<input id="result2" type="text" name="t3" value="">
+       <br/>
+     <br/>
+    </form>
+</fieldset>
+
+<br/>
+
+<fieldset>
+	<legend>ZAKAT ON SILVER(2.5%)</legend>
+     
+         Include Household Silver Utensils, Artefacts, and Jewelery.  For Utensils, usually the silver is 90% pure so take 90% of the total weight  <input id="silver" type="text" name="t3" value=""> <input id="res6" type="text" name="t3" value="">
+       <br/>
+       <br/>
+      total result:<input id="result3" type="text" name="t3" value="">
+       <br/>
+     <br/>
+    </form>
+</fieldset>
+
+<br/>
+
+<fieldset>
+	<legend>ZAKAT ON CASH IN HAND/BANK(2.5%)</legend>
+     
+      Cash in hand   <input id="cash1" type="text" name="t1" value="">   
+       <input id="r1" type="text" name="t3" value="">
+       <br/>
+     <br/>
+    Cash in bank in Savings Accounts  <input id="cash2" type="text" name="t1" value="">    
+      <input id="r2" type="text" name="t3" value="">
+       <br/>
+     <br/>
+    Cash in bank in current Accounts   <input id="cash3" type="text" name="t1" value="">
+      <input id="r3" type="text" name="t3" value="">    
+       <br/>
+       <br/>
+       Cash held in fixed Deposits   <input id="cash4" type="text" name="t1" value="">      
+       <input id="r4" type="text" name="t3" value="">     
+       <br/>
+       <br/>
+      total result:<input id="result4" type="text" name="t3" value="">
+       <br/>
+     <br/>
+    </form>
+</fieldset>
+
+<br/>
+
+<fieldset>
+	<legend>ZAKAT ON LOANS / INVESTMENTS / FUNDS / SHARES , ETC (2.5%)</legend>
+     
+      Loans Receivable from Friends and Relatives <input id="loan1" type="text" name="t1" value="">
+       <input id="re1" type="text" name="t3" value="">
+       <br/>
+     <br/>
+    Investment in Govt Bonds <input id="loan2" type="text" name="t1" value="">
+       <input id="re2" type="text" name="t3" value="">
+       <br/>
+       <br/>
+    Provident Fund Contribution to date <input id="loan3" type="text" name="t1" value="">
+       <input id="re3" type="text" name="t3" value="">
+       <br/>
+       <br/>
+    Insurance Premiums including bonus up to date <input id="loan4" type="text" name="t1" value="">
+       <input id="re4" type="text" name="t3" value="">
+       <br/>
+       <br/>
+    Value of Shares (stocks) including Dividends. Take their market value on the date of calculation <input id="loan5" type="text" name="t1" value="">
+       <input id="re5" type="text" name="t3" value="">
+       <br/>
+       <br/>
+    Government Security Deposits, ADRs, etc <input id="loan6" type="text" name="t1" value="">
+       <input id="re6" type="text" name="t3" value="">
+       <br/>
+       <br/>
+    Investment in Private Chits, Funds, etc <input id="loan7" type="text" name="t1" value="">
+       <input id="re7" type="text" name="t3" value="">
+       <br/>
+       <br/>
+    Other Sources of Wealth<input id="loan8" type="text" name="t1" value="">       
+       <input id="re8" type="text" name="t3" value="">
+       <br/>
+       <br/>
+      total result:<input id="result5" type="text" name="t3" value="">
+       <br/>
+     <br/>
+    </form>
+</fieldset>
+
+<br/>
+
+<fieldset>
+	<legend>ZAKAT ON LANDED PROPERTY  (2.5%)</legend>
+     
+      Landed Property held as an Investment / Business (Estimate the current Maket Value) <input id="land1" type="text" name="t1" value="">
+       <input id="la1" type="text" name="t3" value="">
+       <br/>
+     <br/>
+    Zakat on Rentals Coming from Property (After Deducting for all expenses)<input id="land2" type="text" name="t1" value="">       
+       <input id="la2" type="text" name="t3" value="">
+       <br/>
+       <br/>
+      total result:<input id="result6" type="text" name="t3" value="">
+       <br/>
+     <br/>
+    </form>
+</fieldset>
+
+<br/>
+
+<fieldset>
+	<legend>ZAKAT ON BUSINESS (2.5%) ----- (STOCK-IN-TRADE)</legend>
+     
+      Value of Saleable Stock <input id="bus1" type="text" name="t1" value="">
+       <input id="b1" type="text" name="t3" value="">
+       <br/>
+     <br/>
+    Value of Damaged / Dead Stock <input id="bus2" type="text" name="t1" value="">       
+       <input id="b2" type="text" name="t3" value="">
+       <br/>
+       <br/>
+     Amount Receivable from Credit Sales <input id="bus3" type="text" name="t1" value="">
+       <input id="b3" type="text" name="t3" value="">
+       <br/>
+     <br/>
+     LESS: Amount Payable to Suppliers (Credit taken from suppliers for stocking goods) <input id="bus4" type="text" name="t1" value="">
+       <input id="b4" type="text" name="t3" value="">
+       <br/>
+     <br/>
+    LESS: Bad Debts <input id="bus5" type="text" name="t1" value="">
+       <input id="b5" type="text" name="t3" value="">
+       <br/>
+     <br/>
+      total value of stock:<input id="result7" type="text" name="t3" value="">
+       <br/>
+     <br/>
+    </form>
+</fieldset>
+
+<br/>
+
+<fieldset>
+	<legend>ZAKAT ON SHARE IN PARTNERSHIP FIRMS(2.5%)</legend>
+     
+      Capital Balance as per Last balance Sheet <input id="share1" type="text" name="t1" value="">
+       <input id="s1" type="text" name="t3" value="">
+       <br/>
+     <br/>
+    Loans Advanced by you to the Firm as of Date <input id="share2" type="text" name="t1" value="">       
+       <input id="s2" type="text" name="t3" value="">
+       <br/>
+       <br/>
+     LESS:  Withdrawals made by you during the current Year <input id="share3" type="text" name="t1" value="">
+       <input id="s3" type="text" name="t3" value="">
+       <br/>
+     <br/>
+     Accumulated Profit from the date of Balance Sheet to this Date (Estimate the Profit Value as it is difficult to get exact figures in the middle of Accounting Year) <input id="share4" type="text" name="t1" value="">
+       <input id="s4" type="text" name="t3" value="">
+       <br/>
+     <br/>
+     NETT TOTAL WORTH CALCULATED<input id="result8" type="text" name="t3" value="">
+       <br/>
+     <br/>
+    </form>
+</fieldset>
+
+<br/>
+
+<fieldset>
+	<legend>ZAKAT ON AGRICULTURAL PRODUCE (10%, 7.5%, 5%)</legend>
+     
+      Produce Dependent on Rain Water - @ 10% of product (crop) in Value or Kind <input id="agri1" type="text" name="t1" value="">
+       <input id="a1" type="text" name="t3" value="">
+       <br/>
+     <br/>
+    Produce totally dependent on Artificial Irrigation like Canal, Tank, Borewell, etc. @ 5% of Produce (crop) in Value or in Kind <input id="agri2" type="text" name="t1" value="">       
+       <input id="a2" type="text" name="t3" value="">
+       <br/>
+       <br/>
+     Produce dependent Partially on Rain Water and Partially on Artificial Irrigation @ 7.5% of the produce Value or in Kind <input id="agri3" type="text" name="t1" value="">
+       <input id="a3" type="text" name="t3" value="">
+       <br/>
+     <br/>
+     NETT TOTAL WORTH CALCULATED<input id="result9" type="text" name="t3" value="">
+       <br/>
+     <br/>
+    </form>
+</fieldset>
+
+<br/>
+
+<fieldset>
+	<legend>ZAKAT ON ANIMALS & POULTRY & FISH FARMING(2.5%)</legend>
+     
+      Animals/ Birds more than 6 months Old -  @ 1 Animal or Bird PER 40 either in Kind or Value thereof. <input id="anim1" type="text" name="t1" value="">
+       <input id="an1" type="text" name="t3" value="">
+       <br/>
+     <br/>
+    
+     NETT TOTAL WORTH CALCULATED<input id="result10" type="text" name="t3" value="">
+       <br/>
+     <br/>
+    </form>
+</fieldset>
+
+<br/>
+
+<fieldset>
+	<legend>GENERAL LIABILITIES - You need to deduct your direct Payables or Liabilities which have not been deducted earlier - Usage of the loan should have been on  Zakatable Wealth only. HOME & CAR Loans are not to be deducted</legend>
+     
+      Personal Loans/ Debts which are to be paid back <input id="lia1" type="text" name="t1" value="">
+       <input id="li1" type="text" name="t3" value="">
+       <br/>
+     <br/>
+    Income Tax / Wealth Tax Payable (which is due and already counted towards your wealth) <input id="lia2" type="text" name="t1" value="">       
+       <input id="li2" type="text" name="t3" value="">
+       <br/>
+       <br/>
+      total liabilities:<input id="result11" type="text" name="t3" value="">
+       <br/>
+     <br/>
+    </form>
+</fieldset>
+
+<br/>
+
+<fieldset>
+TOTAL ZAKAT PAYABLE:<input id="result" type="text" name="t3" value="">
+</fieldset>
+
+    </center>
+
+</body>
+</html>

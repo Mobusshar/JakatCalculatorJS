@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- SITE TITTLE -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Small Apps</title>
+  
+  <!-- PLUGINS CSS STYLE -->
+  <!-- Bootstrap -->
+  <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Themefisher Font -->  
+  <link href="plugins/themefisher-font/style.css" rel="stylesheet">
+  <!-- Owl Carousel -->
+  <link href="plugins/owl-carousel/assets/owl.carousel.min.css" rel="stylesheet" media="screen">
+  <!-- Owl Carousel Theme -->
+  <link href="plugins/owl-carousel/assets/owl.theme.green.min.css" rel="stylesheet" media="screen">
+  <!-- Fancy Box -->
+  <link href="plugins/fancybox/jquery.fancybox.min.css" rel="stylesheet">
+  <!-- AOS -->
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+
+  <!-- CUSTOM CSS -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- FAVICON -->
+  <link href="images/favicon.png" rel="shortcut icon">
+
+</head>
+
+<body class="body-wrapper">
+
+
+<nav class="navbar main-nav navbar-expand-lg p-0">
+  <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="tf-ion-android-menu"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown active dropdown-slide">
+          <a class="nav-link" href="#"  data-toggle="dropdown">Home
+            <span><i class="tf-ion-ios-arrow-down"></i></span>
+          </a>
+          <!-- Dropdown list -->
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="index.html">Homepage</a>
+            <a class="dropdown-item" href="homepage-2.html">Homepage 2</a>
+            <a class="dropdown-item" href="homepage-3.html">Homepage 3</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown dropdown-slide">
+          <a class="nav-link" href="#"  data-toggle="dropdown">Pages
+            <span><i class="tf-ion-ios-arrow-down"></i></span>
+          </a>
+          <!-- Dropdown list -->
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="team.html">Team</a>
+            <a class="dropdown-item" href="career.html">Career</a>
+            <a class="dropdown-item" href="blog.html">Blog</a>
+            <a class="dropdown-item" href="blog-single.html">Blog Single</a>
+            <a class="dropdown-item" href="privacy-policy.html">Privacy</a>
+            <a class="dropdown-item" href="FAQ.html">FAQ</a>
+            <a class="dropdown-item" href="sign-in.html">Sign In</a>
+            <a class="dropdown-item" href="sign-up.html">Sign Up</a>
+            <a class="dropdown-item" href="404.html">404</a>
+            <a class="dropdown-item" href="comming-soon.html">Coming Soon</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+      </div>
+  </div>
+</nav>
+<!--====================================
+=            Hero Section            =
+=====================================-->
+<section class="section slider bg-blue">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 m-auto">
+				<div class="block">
+					<!-- Heading -->
+					<h1>The new way to Change the world</h1>
+					<!-- Sub-heading -->
+					<h3>The simple, intuitive app that makes it easy to make happy,
+						manage your lifestyle, and work balances faster.</h3>
+					<div class="download">
+						<a href="" class="btn btn-download">
+							Download Now
+							<span class="tf-ion-arrow-down-c"></span>
+						</a>
+					</div>
+					<!-- Image -->
+					<div class="image-content">
+						<img class="img-fluid" src="images/feature/iphone-lied.jpg" alt="iphone-white">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--====  End of Hero Section  ====-->
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JAKAT CALCULATOR</title>
+</head>
+<body>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript">
+  
+function firstSet(){
+
+var x = document.getElementById('gold1').value;
+var y = document.getElementById('gold2').value;
+var z = document.getElementById('res1').value;
+var result = (Number(x)*Number(y))*0.025;
+$('#res1').val(result);
+resultSet();
+grandTotal();
+}
+
+function secondSet(){
+
+var x = document.getElementById('gold3').value;
+var y = document.getElementById('gold4').value;
+var z = document.getElementById('res2').value;
+var result = (Number(x)*Number(y))*0.025;
+$('#res2').val(result);
+resultSet();
+grandTotal();
+}
+
+function thirdSet(){
+
+var x = document.getElementById('gold5').value;
+var y = document.getElementById('gold6').value;
+var z = document.getElementById('res3').value;
+var result = (Number(x)*Number(y))*0.025;
+$('#res3').val(result);
+resultSet();
+grandTotal();
+}
+
+function fourthSet(){
+
+var x = document.getElementById('gold7').value;
+var z = document.getElementById('res4').value;
+var result = Number(x)*0.025;
+$('#res4').val(result);
+resultSet();
+grandTotal();
+}
+
+function resultSet(){
+
+var x = document.getElementById('res1').value;
+var y = document.getElementById('res2').value;
+var z = document.getElementById('res3').value;
+var a = document.getElementById('res4').value;
+var result = Number(x)+Number(y)+Number(z)+Number(a);
+$('#result1').val(result);
+grandTotal();
+}
+
+function fifthSet(){
+
+var x = document.getElementById('pstones').value;
+var result = Number(x)*0.025;
+$('#result2').val(result);
+fifthSet();
+grandTotal();
+}
+
+function setSilver(){
+
+var x = document.getElementById('silver').value;
+var y = document.getElementById('silver1').value;
+
+var result = (Number(x)*Number(y))*0.025;
+$('#result3').val(result);
+setSilver();
+grandTotal();
+}
+
+function handCash(){
+
+var x = document.getElementById('cash1').value;
+var y = document.getElementById('cash2').value;
+var z = document.getElementById('cash3').value;
+var a = document.getElementById('cash4').value;
+var r1 = Number(x)*0.025;
+$('#r1').val(r1);
+var r2 = Number(y)*0.025;
+$('#r2').val(r2);
+var r3 = Number(z)*0.025;
+$('#r3').val(r3);
+var r4 = Number(a)*0.025;
+$('#r4').val(r4);
+fourthResult();
+}
+
+function fourthResult(){
+
+var x = document.getElementById('r1').value;
+var y = document.getElementById('r2').value;
+var z = document.getElementById('r3').value;
+var a = document.getElementById('r4').value;
+
+var result=Number(x)+Number(y)+Number(z)+Number(a);
+$('#result4').val(result);
+grandTotal();
+}
+
+function loan(){
+
+var a = document.getElementById('loan1').value;
+var b = document.getElementById('loan2').value;
+var c = document.getElementById('loan3').value;
+var d = document.getElementById('loan4').value;
+var e = document.getElementById('loan5').value;
+var f = document.getElementById('loan6').value;
+var g = document.getElementById('loan7').value;
+var h = document.getElementById('loan8').value;
+
+var re1 = Number(a)*0.025;
+$('#re1').val(re1);
+var re2 = Number(b)*0.025;
+$('#re2').val(re2);
+var re3 = Number(c)*0.025;
+$('#re3').val(re3);
+var re4 = Number(d)*0.025;
+$('#re4').val(re4);
+var re5 = Number(e)*0.025;
+$('#re5').val(re5);
+var re6 = Number(f)*0.025;
+$('#re6').val(re6);
+var re7 = Number(g)*0.025;
+$('#re7').val(re7);
+var re8 = Number(h)*0.025;
+$('#re8').val(re8);
+
+fifthResult();
+}
+
+function fifthResult(){
+
+
+var a = document.getElementById('re1').value;
+var b = document.getElementById('re2').value;
+var c = document.getElementById('re3').value;
+var d = document.getElementById('re4').value;
+var e = document.getElementById('re5').value;
+var f = document.getElementById('re6').value;
+var g = document.getElementById('re7').value;
+var h = document.getElementById('re8').value;
+
+var result=Number(a)+Number(b)+Number(c)+Number(d)+Number(e)+Number(f)+Number(g)+Number(h);
+$('#result5').val(result);
+grandTotal();
+
+}
+
+function land(){
+var a = document.getElementById('land1').value;
+var b = document.getElementById('land2').value;
+var la1 = Number(a)*0.025;
+$('#la1').val(la1);
+var la2 = Number(b)*0.025;
+$('#la2').val(la2);
+sixthResult();
+}
+
+function sixthResult(){
+
+var a = document.getElementById('la1').value;
+var b = document.getElementById('la2').value;
+var result=Number(a)+Number(b);
+$('#result6').val(result);
+grandTotal();
+
+}
+
+function bus(){
+
+var a = document.getElementById('bus1').value;
+var b = document.getElementById('bus2').value;
+var c = document.getElementById('bus3').value;
+var d = document.getElementById('bus4').value;
+var e = document.getElementById('bus5').value;
+
+
+var b1 = Number(a)*0.025;
+$('#b1').val(b1);
+var b2 = Number(b)*0.025;
+$('#b2').val(b2);
+var b3 = Number(c)*0.025;
+$('#b3').val(b3);
+var b4 = Number(d)*0.025;
+$('#b4').val(b4);
+var b5 = Number(e)*0.025;
+$('#b5').val(b5);
+
+
+seventhResult();
+
+}
+
+function seventhResult(){
+
+var a = document.getElementById('b1').value;
+var b = document.getElementById('b2').value;
+var c = document.getElementById('b3').value;
+var d = document.getElementById('b4').value;
+var e = document.getElementById('b5').value;
+
+
+var resu=Number(a)+Number(b)+Number(c);
+var res = Number(d)+Number(e);
+var result = Number(resu)-Number(res);
+$('#result7').val(result);
+grandTotal();
+
+}
+
+function share(){
+
+var a = document.getElementById('share1').value;
+var b = document.getElementById('share2').value;
+var c = document.getElementById('share3').value;
+var d = document.getElementById('share4').value;
+
+
+var s1 = Number(a)*0.025;
+$('#s1').val(s1);
+var s2 = Number(b)*0.025;
+$('#s2').val(s2);
+var s3 = Number(c)*0.025;
+$('#s3').val(s3);
+var s4 = Number(d)*0.025;
+$('#s4').val(s4);
+
+
+eighthResult();
+
+}
+
+function eighthResult(){
+
+var a = document.getElementById('s1').value;
+var b = document.getElementById('s2').value;
+var c = document.getElementById('s3').value;
+var d = document.getElementById('s4').value;
+
+
+var resu=Number(a)+Number(b)+Number(d);
+var res = Number(c);
+var result = Number(resu)-Number(res);
+$('#result8').val(result);
+grandTotal();
+
+}
+
+function agri(){
+  var a = document.getElementById('agri1').value;
+var b = document.getElementById('agri2').value;
+var c = document.getElementById('agri3').value;
+
+var a1 = Number(a)*0.1;
+$('#a1').val(a1);
+var a2 = Number(b)*0.05;
+$('#a2').val(a2);
+var a3 = Number(c)*0.075;
+$('#a3').val(a3);
+
+ninthResult();
+
+}
+
+function ninthResult(){
+
+var a = document.getElementById('a1').value;
+var b = document.getElementById('a2').value;
+var c = document.getElementById('a3').value;
+
+
+var result=Number(a)+Number(b)+Number(c);
+
+$('#result9').val(result);
+grandTotal();
+
+
+}
+
+function anim(){
+
+var a = document.getElementById('anim1').value;
+
+
+var an1 = Number(a)*0.025;
+$('#an1').val(an1);
+
+tenthResult();
+
+}
+function tenthResult(){
+
+var a = document.getElementById('an1').value;
+var result = Number(a);
+$('#result10').val(result);
+grandTotal();
+
+}
+
+function lia(){
+
+
+var a = document.getElementById('lia1').value;
+var b = document.getElementById('lia2').value;
+
+
+var li1 = Number(a)*0.025;
+$('#li1').val(li1);
+var li2 = Number(b)*0.025;
+$('#li2').val(li2);
+
+eleventhResult();
+
+}
+function eleventhResult(){
+
+
+var a = document.getElementById('li1').value;
+
+var b = document.getElementById('li2').value;
+var result = Number(a) +Number(b);
+$('#result11').val(result);
+grandTotal();
+
+
+}
+
+
+function grandTotal(){
+
+
+
+var a = document.getElementById('result1').value;
+var b = document.getElementById('result2').value;
+var c = document.getElementById('result3').value;
+var d = document.getElementById('result4').value;
+var e = document.getElementById('result5').value;
+var f = document.getElementById('result6').value;
+var g = document.getElementById('result7').value;
+var h = document.getElementById('result8').value;
+var i = document.getElementById('result9').value;
+var j = document.getElementById('result10').value;
+var k = document.getElementById('result11').value;
+
+var re=Number(a)+Number(b)+Number(c)+Number(d)+Number(e)+Number(f)+Number(g)+Number(h)+Number(i)+Number(j);
+var res = Number(k);
+var result=Number(re)-Number(res);
+$('#result').val(result);
+
+}
+
+
+</script>
+    <center>
+
+<fieldset>
+  <legend>ZAKAT ON GOLD(2.5%)</legend>
+     24 carat Gold/Jewelry   <input id="gold1" onchange="firstSet()" placeholder="weight in grams" type="Number" name="t1" value="">       
+       <input id="gold2" placeholder="price/gram" onchange="firstSet()" type="Number" name="t2" value="">
+       <input id="res1" type="Number" name="t3" value="">
+       <br/>
+     <br/>
+     22 carat Gold/Jewelry   <input id="gold3" onchange="secondSet()" placeholder="weight in grams" type="Number" name="t1" value="">       
+      <input id="gold4"  placeholder="price/gram" onchange="secondSet()" type="Number" name="t2" value="">      
+      <input id="res2" type="Number" name="t3" value="">
+       <br/>
+     <br/>
+     18 carat Gold/Jewelry   <input id="gold5" onchange="thirdSet()" placeholder="weight in grams" type="Number" name="t1" value="">      
+       <input id="gold6"  placeholder="price/gram" onchange="thirdSet()" type="Number" name="t2" value="">       
+       <input id="res3" type="Number" name="t3" value="">
+       <br/>
+       <br/>
+       Other estimated gold valuables.(please insert the current estimated value)   <input id="gold7"  placeholder="Estimated value" onchange="fourthSet()" type="Number" name="t3" value=""> <input id="res4" onchange="fourthSet()" type="Number" name="t3" value="">
+       <br/>
+       <br/>
+      Zakat payable:<input id="result1"  placeholder="Zakat payable" onchange="resultSet()" type="Number" name="t3" value="">
+       <br/>
+     <br/>
+    </form>
+</fieldset>
+
+<br/>
+
+<fieldset>
+  <legend>ZAKAT ON PRECIOUS STONES(2.5%)</legend>
+     
+         Calculate the nett Market Value of the Precious stones like Diamonds, Rubies, Etc. and add them to the Estimated Value  <input id="pstones" onchange="fifthSet()"  placeholder="Estimated value"  type="Number" name="t3" value=""> 
+       <br/>
+       <br/>
+      Zakat payable:<input id="result2"  placeholder="Zakat payable" onchange="secondResult()" type="Number" name="t3" value="">
+       <br/>
+     <br/>
+    </form>
+</fieldset>
+
+<br/>
+
+<fieldset>
+  <legend>ZAKAT ON SILVER(2.5%)</legend>
+     
+         Include Household Silver Utensils, Artefacts, and Jewelery.  For Utensils, usually the silver is 90% pure so take 90% of the total weight  <input id="silver"  placeholder="Weight in grams" onchange="setSilver()" type="Number" name="t3" value=""><input id="silver1"  placeholder="price/gram"  onchange="setSilver()" type="Number" name="t3" value=""> 
+       <br/>
+       <br/>
+      Zakat payable:<input id="result3"  placeholder="Zakat payable" type="Number" name="t3" value="">
+       <br/>
+     <br/>
+    </form>
+</fieldset>
+
+<br/>
+
+<fieldset>
+  <legend>ZAKAT ON CASH IN HAND/BANK(2.5%)</legend>
+     
+      Cash in hand   <input id="cash1"  placeholder="Actual value" onchange="handCash()" type="Number" name="t1" value="">   
+       <input id="r1" type="Number" name="t3" value="">
+       <br/>
+     <br/>
+    Cash in bank in Savings Accounts  <input id="cash2" placeholder="Actual value" onchange="handCash()" type="Number" name="t1" value="">    
+      <input id="r2" type="Number" name="t3" value="">
+       <br/>
+     <br/>
+    Cash in bank in current Accounts   <input id="cash3" placeholder="Actual value" onchange="handCash()" type="Number" name="t1" value="">
+      <input id="r3" type="Number" name="t3" value="">    
+       <br/>
+       <br/>
+       Cash held in fixed Deposits   <input id="cash4" placeholder="Actual value" onchange="handCash()" type="Number" name="t1" value="">      
+       <input id="r4" type="Number" name="t3" value="">     
+       <br/>
+       <br/>
+      Zakat payable:<input id="result4" onchange="fourthResult()" placeholder="Zakat payable" type="Number" name="t3" value="">
+       <br/>
+     <br/>
+    </form>
+</fieldset>
+
+<br/>
+
+<fieldset>
+  <legend>ZAKAT ON LOANS / INVESTMENTS / FUNDS / SHARES , ETC (2.5%)</legend>
+     
+      Loans Receivable from Friends and Relatives <input id="loan1" placeholder="Actual value" onchange="loan()" type="Number" name="t1" value="">
+       <input id="re1" type="Number" name="t3" value="">
+       <br/>
+     <br/>
+    Investment in Govt Bonds <input id="loan2" onchange="loan()" placeholder="Actual value" type="Number" name="t1" value="">
+       <input id="re2" type="Number" name="t3" value="">
+       <br/>
+       <br/>
+    Provident Fund Contribution to date <input id="loan3" onchange="loan()" placeholder="Actual value" type="Number" name="t1" value="">
+       <input id="re3" type="Number" name="t3" value="">
+       <br/>
+       <br/>
+    Insurance Premiums including bonus up to date <input id="loan4" onchange="loan()" placeholder="Actual value" type="Number" name="t1" value="">
+       <input id="re4" type="Number" name="t3" value="">
+       <br/>
+       <br/>
+    Value of Shares (stocks) including Dividends. Take their market value on the date of calculation <input id="loan5" placeholder="Actual value" onchange="loan()" type="Number" name="t1" value="">
+       <input id="re5" type="Number" name="t3" value="">
+       <br/>
+       <br/>
+    Government Security Deposits, ADRs, etc <input id="loan6" placeholder="Actual value" onchange="loan()" type="Number" name="t1" value="">
+       <input id="re6" type="Number" name="t3" value="">
+       <br/>
+       <br/>
+    Investment in Private Chits, Funds, etc <input id="loan7" placeholder="Actual value" onchange="loan()" type="Number" name="t1" value="">
+       <input id="re7" type="Number" name="t3" value="">
+       <br/>
+       <br/>
+    Other Sources of Wealth<input id="loan8" onchange="loan()" placeholder="Actual value" type="Number" name="t1" value="">       
+       <input id="re8" type="Number" name="t3" value="">
+       <br/>
+       <br/>
+      Zakat payable:<input id="result5" onchange="fifthResult()" placeholder="Zakat payable" type="Number" name="t3" value="">
+       <br/>
+     <br/>
+    </form>
+</fieldset>
+
+<br/>
+
+<fieldset>
+  <legend>ZAKAT ON LANDED PROPERTY  (2.5%)</legend>
+     
+      Landed Property held as an Investment / Business (Estimate the current Maket Value) <input id="land1" onchange="land()" placeholder="Estimate value" type="Number" name="t1" value="">
+       <input id="la1" type="Number" name="t3" value="">
+       <br/>
+     <br/>
+    Zakat on Rentals Coming from Property (After Deducting for all expenses)<input id="land2" onchange="land()" placeholder="Estimate value" type="Number" name="t1" value="">       
+       <input id="la2" type="Number" name="t3" value="">
+       <br/>
+       <br/>
+      Zakat payable:<input id="result6" onchange="sixthResult()" placeholder="Zakat payable" type="Number" name="t3" value="">
+       <br/>
+     <br/>
+    </form>
+</fieldset>
+
+<br/>
+
+<fieldset>
+  <legend>ZAKAT ON BUSINESS (2.5%) ----- (STOCK-IN-TRADE)</legend>
+     
+      Value of Saleable Stock <input id="bus1" onchange="bus()" type="Number" name="t1" value="">
+       <input id="b1" type="Number" name="t3" value="">
+       <br/>
+     <br/>
+    Value of Damaged / Dead Stock <input id="bus2"  onchange="bus()" type="Number" name="t1" value="">       
+       <input id="b2" type="Number" name="t3" value="">
+       <br/>
+       <br/>
+     Amount Receivable from Credit Sales <input id="bus3"  onchange="bus()" type="Number" name="t1" value="">
+       <input id="b3" type="Number" name="t3" value="">
+       <br/>
+     <br/>
+     LESS: Amount Payable to Suppliers (Credit taken from suppliers for stocking goods) <input id="bus4"  onchange="bus()" type="Number" name="t1" value="">
+       <input id="b4" type="Number" name="t3" value="">
+       <br/>
+     <br/>
+    LESS: Bad Debts <input id="bus5"  onchange="bus()" type="Number" name="t1" value="">
+       <input id="b5" type="Number" name="t3" value="">
+       <br/>
+     <br/>
+      total value of stock:<input id="result7" placeholder="Zakat payable" onchange="seventhResult()" type="Number" name="t3" value="">
+       <br/>
+     <br/>
+    </form>
+</fieldset>
+
+<br/>
+
+<fieldset>
+  <legend>ZAKAT ON SHARE IN PARTNERSHIP FIRMS(2.5%)</legend>
+     
+      Capital Balance as per Last balance Sheet <input id="share1" onchange="share()" type="Number" name="t1" value="">
+       <input id="s1" type="Number" name="t3" value="">
+       <br/>
+     <br/>
+    Loans Advanced by you to the Firm as of Date <input id="share2" onchange="share()"  type="Number" name="t1" value="">       
+       <input id="s2" type="Number" name="t3" value="">
+       <br/>
+       <br/>
+     LESS:  Withdrawals made by you during the current Year <input id="share3"  onchange="share()" type="Number" name="t1" value="">
+       <input id="s3" type="Number" name="t3" value="">
+       <br/>
+     <br/>
+     Accumulated Profit from the date of Balance Sheet to this Date (Estimate the Profit Value as it is difficult to get exact figures in the middle of Accounting Year) <input id="share4"  onchange="share()" type="Number" name="t1" value="">
+       <input id="s4" type="Number" name="t3" value="">
+       <br/>
+     <br/>
+     NETT TOTAL WORTH CALCULATED<input id="result8" placeholder="Zakat payable" onchange="eighthResult()" type="Number" name="t3" value="">
+       <br/>
+     <br/>
+    </form>
+</fieldset>
+
+<br/>
+
+<fieldset>
+  <legend>ZAKAT ON AGRICULTURAL PRODUCE (10%, 7.5%, 5%)</legend>
+     
+      Produce Dependent on Rain Water - @ 10% of product (crop) in Value or Kind <input id="agri1" onchange="agri()" placeholder="Value of produce" type="Number" name="t1" value="">
+       <input id="a1" type="Number" name="t3" value="">
+       <br/>
+     <br/>
+    Produce totally dependent on Artificial Irrigation like Canal, Tank, Borewell, etc. @ 5% of Produce (crop) in Value or in Kind <input id="agri2" onchange="agri()" placeholder="Value of produce" type="Number" name="t1" value="">       
+       <input id="a2" type="Number" name="t3" value="">
+       <br/>
+       <br/>
+     Produce dependent Partially on Rain Water and Partially on Artificial Irrigation @ 7.5% of the produce Value or in Kind <input id="agri3" onchange="agri()" type="Number" placeholder="Value of produce" name="t1" value="">
+       <input id="a3" type="Number" name="t3" value="">
+       <br/>
+     <br/>
+     NETT TOTAL WORTH CALCULATED<input id="result9" placeholder="Zakat payable" onchange="ninthResult()" type="Number" name="t3" value="">
+       <br/>
+     <br/>
+    </form>
+</fieldset>
+
+<br/>
+
+<fieldset>
+  <legend>ZAKAT ON ANIMALS & POULTRY & FISH FARMING(2.5%)</legend>
+     
+      Animals/ Birds more than 6 months Old -  @ 1 Animal or Bird PER 40 either in Kind or Value thereof. <input id="anim1" placeholder="Total value" onchange="anim()" type="Number" name="t1" value="">
+       <input id="an1" type="Number" name="t3" value="">
+       <br/>
+     <br/>
+    
+     NETT TOTAL WORTH CALCULATED<input id="result10" placeholder="Zakat payable" onchange="tenthResult()" type="Number" name="t3" value="">
+       <br/>
+     <br/>
+    </form>
+</fieldset>
+
+<br/>
+
+<fieldset>
+  <legend>GENERAL LIABILITIES - You need to deduct your direct Payables or Liabilities which have not been deducted earlier - Usage of the loan should have been on  Zakatable Wealth only. HOME & CAR Loans are not to be deducted</legend>
+     
+      Personal Loans/ Debts which are to be paid back <input id="lia1" onchange="lia()" type="Number" name="t1" value="">
+       <input id="li1" type="Number" name="t3" value="">
+       <br/>
+     <br/>
+    Income Tax / Wealth Tax Payable (which is due and already counted towards your wealth) <input id="lia2" onchange="lia()" type="Number" name="t1" value="">       
+       <input id="li2" type="Number" name="t3" value="">
+       <br/>
+       <br/>
+      total liabilities:<input id="result11" onchange="eleventhResult()" type="Number" name="t3" value="">
+       <br/>
+     <br/>
+    </form>
+</fieldset>
+
+<br/>
+
+<fieldset>
+<h1>TOTAL ZAKAT PAYABLE:</h1><input id="result" placeholder="TOTAL ZAKAT PAYABLE" type="Number" name="t3" value="">
+</fieldset>
+
+    </center>
+
+  
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<section class="buy-pro" style="padding: 100px 0;">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 mx-auto">
+				<div class="pro-block text-center" style="padding: 40px 50px; background: white; box-shadow: 0px 2px 28px 0px #7777775e; border-radius: 5px;">
+					<h1 style="font-size: 25px; line-height: 1; font-weight: 600;">You have downloaded free version of Small Apps.</h1>
+					<h5 style="padding: 10px 0 15px 0;">To get full access of this page please purchase the premium version</h5>
+					<h5 style="font-weight: 700;">Why Premium?</h5>
+					<ul class="list-unstyled" style="margin-bottom: 20px; ">
+						<li>Full Template Pack</li>
+						<li>Priority Support</li>
+						<li>Documentation Included</li>
+						<li>Monthly Update</li>
+						<li>Lifetime Download</li>
+						<li>Personal and commercial Use</li>
+						<li>One time payment</li>
+					</ul>
+					<a href="http://bit.ly/small-apps" target="_blank" class="btn btn-main" style="margin-bottom: 20px;">Get Premium Version</a>
+					<p><strong>By purchasing the pro version you are actually helping us to contribute the whole community by providing free templates.</strong></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<!--====  End of Testimonial  ====-->
+
+<section class="call-to-action-app section bg-blue">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h2>It's Time to change your mind</h2>
+				<p>Download over 2 million humans .Get Small Apps free forever!
+					<br>We say you won’t look back.</p>
+				<ul class="list-inline">
+					<li class="list-inline-item">
+						<a href="" class="btn btn-rounded-icon">
+							<i class="tf-ion-social-apple"></i>
+							Iphone
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a href="" class="btn btn-rounded-icon">
+							<i class="tf-ion-social-android"></i>
+							Android
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a href="" class="btn btn-rounded-icon">
+							<i class="tf-ion-social-windows"></i>
+							Windows
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--============================
+=            Footer            =
+=============================-->
+
+<footer class="footer-main">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-12 m-md-auto align-self-center">
+          <div class="block">
+            <a href="index.html"><img src="images/logo-alt.png" alt="footer-logo"></a>
+            <!-- Social Site Icons -->
+            <ul class="social-icon list-inline">
+              <li class="list-inline-item">
+                <a href="#"><i class="tf-ion-social-facebook"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="tf-ion-social-twitter"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="tf-ion-social-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+          <div class="block-2">
+            <!-- heading -->
+            <h6>Product</h6>
+            <!-- links -->
+            <ul>
+              <li><a href="">Features</a></li>
+              <li><a href="">Testimonial</a></li>
+              <li><a href="">Pricing</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+          <div class="block-2">
+            <!-- heading -->
+            <h6>Resources</h6>
+            <!-- links -->
+            <ul>
+              <li><a href="sign-up.html">Singup</a></li>
+              <li><a href="sign-in.html">Login</a></li>
+              <li><a href="#">Help & Support</a></li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+          <div class="block-2">
+            <!-- heading -->
+            <h6>Company</h6>
+            <!-- links -->
+            <ul>
+              <li><a href="career.html">Career</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="">Investor</a></li>
+              <li><a href="privacy.html">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+          <div class="block-2">
+            <!-- heading -->
+            <h6>Company</h6>
+            <!-- links -->
+            <ul>
+              <li><a href="">Career</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="">Investor</a></li>
+              <li><a href="">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+</footer>
+
+
+
+  <!-- JAVASCRIPTS -->
+  <script src="plugins/jquery/jquery.js"></script>
+  <script src="plugins/popper/popper.min.js"></script>
+  <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+  <script src="plugins/owl-carousel/owl.carousel.min.js"></script>
+  <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="plugins/smoothscroll/SmoothScroll.min.js"></script>
+  <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
+  <script src="plugins/aos/aos.js"></script>
+  <!-- google map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI14J_PNWVd-m0gnUBkjmhoQyNyd7nllA"></script>
+  <script src="plugins/google-map/gmap.js"></script>
+  
+  <script src="js/custom.js"></script>
+</body>
+
+</html>
